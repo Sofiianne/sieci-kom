@@ -20,7 +20,7 @@
           --bs-primary: #70d1d1;
           --bs-secondary: #519794;
         
-          --bs-card-bg: #081a21;
+          --bs-card-bg: #041014;
           --bs-border-color: #1f5664;
         }
         
@@ -44,6 +44,13 @@
   font-size: 30px;
   color:#ffffff;
 }
+
+        .title-little-little {
+  font-family: "Syne Mono", monospace;
+  font-optical-sizing: auto;
+  font-size: 25px;
+  color:#ffffff;
+}
 .transform {
     display: inline-block;
     background: #19aaaa;
@@ -56,7 +63,16 @@
     transform: rotate(6deg) scale(1.1);
     box-shadow: #071e20;
   }
-        </style>
+
+.card {
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+  .card:hover {
+  transform: translateY(-10px);
+  background: #0e3033;
+  }
+          </style>
 </head>
 <body>
     <div class="container-fluid p-0">
@@ -75,35 +91,61 @@
 
     <div class="container-lg"   style=height:100vh;>
       
-        <h1 class="m-2 title">Notatki!</h1>
+        <h1 class="m-2 title" id="notatki">Notatki!</h1>
           <div class="d-grid gap-3 row-gap-3">
     
  <div class="row g-3 justify-content-center">
 
-    <div class="col-10 col-md-4" id="notatki">
+
+
+      <div class="col-10 col-md-4">
       <div class="card p-3">
-                <p class="fst-italic">Maciej</p>
-        <p class="card-text">Uwielbiam tę restaurację! <br> Wszystko jest zawsze świeże i doskonale przyrządzone. To moje ulubione miejsce w mieście!</p>
+                <p class="title-little-little">Co w sieci piszczy i gdzie ukrywa się internet</p>
+        <p class="card-text fst-italic">Halooo! Poszukiwany: Internet!</p>
       </div>
     </div>
 
 
-    <div class="col-10 col-md-4">
+    <div class="col-10 col-md-4"">
       <div class="card p-3">
-                <p class="fst-italic">Pola</p>
-        <p class="card-text">Dobre ceny, dobra jakość, dobre miejsce</p>
+                <p class="title-little-little">Switche, routery i inne urządzenia</p>
+        <p class="card-text fst-italic">Co i gdzie, z czym i jak?!</p>
       </div>
     </div>
 
        
-
     <div class="col-10 col-md-4">
       <div class="card p-3">
-        <p class="fst-italic">Izabela</p>
-        <p class="card-text">Mój absolutny numer jeden! Wszystko jest smaczne, dobrze przyrządzone i szybko przygotowane</p>
+                <p class="title-little-little">Router-DHCP</p>
+        <p class="card-text fst-italic">Co daje, co to jest, jak działa i z czym to się je</p>
       </div>
     </div>
 
+<hr>
+<!--drugi poziom-->
+ <div class="col-10 col-md-4">
+      <div class="card p-3">
+                <p class="title-little-little">Bez kabla czy z kablem - oto jest pytanie!</p>
+        <p class="card-text fst-italic">Połączenia przewodowe i bezprzewodowe. Jak to jest z nimi jest? Ależ ambaras!</p>
+      </div>
+    </div>
+
+
+<div class="col-10 col-md-4">
+      <div class="card p-3">
+                <p class="title-little-little">Maskarada!</p>
+        <p class="card-text fst-italic">Maski</p>
+      </div>
+    </div>
+
+
+     <div class="col-10 col-md-4">
+      <div class="card p-3">
+                <p class="title-little-little">Puk, puk! Czy to dobry adres? Adresy IP</p>
+        <p class="card-text fst-italic">Adresy lokalne, publiczne IPv4 VS. IPv6, adresy logiczne i fizyczne (MAC)... ile tego?!</p>
+      </div>
+    </div>
+     
 
        </div>
       </div>
