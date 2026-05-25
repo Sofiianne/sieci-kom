@@ -80,8 +80,16 @@ hr {
 .transform:hover {
     transform: rotate(6deg) scale(1.1);
     box-shadow: #071e20;
+    animation: tecza 1s infinite;
   }
 
+
+/* Definicja animacji (przechodzenie przez różne kolory) */
+@keyframes tecza {
+    0% { background-color: #6efcfc; }   /* Czerwony */
+    20% { background-color: #1de9e9; }  /* Pomarańczowy */
+
+}
 .card {
      transition: transform 0.3s ease, box-shadow 0.3s ease;
 
@@ -90,6 +98,10 @@ hr {
   transform: translateY(-10px);
   background: #0e3033;
   }
+
+
+  
+
           </style>
 </head>
 <body>
@@ -99,7 +111,7 @@ hr {
        background: linear-gradient(rgba(1, 46, 44, 0.877), rgba(13, 112, 119, 0.548)),
        url('siec.jpg') center/cover;">
     <div>
-      <h1 class="title m-5">Projekt:S I E C I!</h1>
+      <h1 class="title m-5">Projekt:SIECI!</h1>
       <div class="transform"><a href="#notatki" class="btn title-little">ZOBACZ NOTATKI</a></div>
     </div>
   </div>
