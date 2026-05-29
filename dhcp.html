@@ -50,7 +50,7 @@ hr {
         .title {
   font-family: "Syne Mono", monospace;
   font-optical-sizing: auto;
-  font-size: 60px;
+  font-size: 50px;
   color:#ffffff;
   text-decoration: underline;
 }
@@ -121,10 +121,36 @@ hr {
 
     <div class="container-lg"   style=height:100vh;>
       
-        <h1 class="m-2 text-center title-little">Switche, routery i inne problemy</h1>
+        <h1 class="m-2 text-center title-little">Router i DHCP</h1>
         <hr>
         <div>
-        <h5 class="title-little">Urzadzenia sieciowe</h5>
+        <h5 class="title-little">Router</h5>
+<p>Router to urządzenie sieciowe, które łączy różne sieci komputerowe, np. domową sieć Wi-Fi z Internetem.</p>
+<p>Jego podstawowe zadania:
+<ul>
+<li>Przekazywanie danych między urządzeniami w sieci lokalnej (LAN) a Internetem.</li>
+<li>Tworzenie sieci lokalnej i zarządzanie połączeniami między komputerami, telefonami, smart TV itp.</li>
+<li>Często pełni też funkcję punktu dostępu Wi-Fi.</li>
+</ul>
+</p>
+        <h5 class="title-little">DHCP (Dynamic Host Configuration Protocol)</h5>
+        <p>DHCP to protokół, który automatycznie przydziela urządzeniom w sieci adresy IP i inne ważne ustawienia sieciowe.
+Dzięki DHCP nie trzeba ręcznie wpisywać adresów IP dla każdego urządzenia.</p>
+
+<p class="title-little-little">Co przydziela DHCP:</p>
+<ul>
+<li>Adres IP – unikalny numer identyfikujący urządzenie w sieci.</li>
+<li>Maskę podsieci – określa, która część adresu IP oznacza sieć, a która urządzenie.</li>
+<li>Brama domyślną (Gateway) – adres routera, przez który urządzenie łączy się z Internetem.</li>
+<li>Serwery DNS – adresy serwerów tłumaczących nazwy domen (np. www.google.com
+) na adresy IP.</li>
+</ul>
+<p class="title-little-little">Jak to działa w praktyce:</p>
+<ol>
+  <li>Urządzenie włącza się i pyta sieć: "Czy ktoś może dać mi adres IP?"</li>
+  <li>Router z włączonym DHCP odpowiada i przydziela wolny adres IP oraz pozostałe ustawienia.</li>
+  <li>Urządzenie używa tych danych, żeby połączyć się z Internetem lub innymi komputerami w sieci.</li>
+</ol>
     </div>
 </div>
 </body>
