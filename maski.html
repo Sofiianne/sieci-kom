@@ -157,12 +157,67 @@ bity ustawione na 1 oznaczają część sieci,
 bity ustawione na 0 oznaczają część hosta.
 
 <p class="title-little-little">W tym przykładzie:</p>
-<p>192.168.1 | 10<br>
+<p class="fw-semibold">192.168.1 | 10<br>
    sieć   | host</p>
 
    <p class="title-little-little">Adres sieci to:<br>
 192.168.1.0</p>
-    </div>
+<hr>
+<h5 class="title-little">Zapis CIDR</h5>
+
+<p>Zamiast pełnej maski często używa się skróconego zapisu CIDR.<br>
+
+Przykłady:</p>
+
+<table class="table table-hover" >
+  <thead>
+    <tr>
+<th>Maska</th>
+<th>CIDR</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+  <td>255.0.0.0</td>
+  <td>/8</td>
+</tr>
+<tr>
+  <td>255.255.0.0</td>
+  <td>/16</td>
+
+</tr>
+<tr>
+  <td>255.255.255.0</td>
+  <td>/24</td>
+
+</tr>
+<tr>
+  <td>255.255.255.128</td>
+  <td>/25</td>
+</tr>
+  </tbody>
+</table>
+<p>Im większa wartość po ukośniku (/24, /25, /26...), tym:</p>
+<ul>
+<li>więcej bitów przeznaczonych na sieć,</li>
+<li>mniej dostępnych adresów hostów.</li>
+</ul>
+<p>Przykład:<br>
+192.168.1.10/24</p>
+<p>oznacza <br>
+Adres IP: 192.168.1.10<br>
+Maska:    255.255.255.0</p>
+
+<h5 class="title-little">Dlaczego dzieli się sieci na podsieci?</h5>
+
+<p>Podział na podsieci pozwala:</p>
+<ul>
+<li>lepiej zarządzać dużymi sieciami,</li>
+<li>ograniczyć ruch sieciowy,</li>
+<li>zwiększyć bezpieczeństwo,</li>
+<li>oddzielić różne działy firmy (np. księgowość, administrację, produkcję).</li>
+  </ul>
+  </div>
 </div>
 </body>
 </html>
