@@ -108,12 +108,11 @@ hr {
 <body>
     <div class="container-fluid p-0">
   <div class="text-center d-flex align-items-center justify-content-center"
-       style="height:100vh;
+       style="height:20vh;
        background: linear-gradient(rgba(1, 46, 44, 0.877), rgba(13, 112, 119, 0.548)),
        url('siec.jpg') center/cover;">
     <div>
-      <h1 class="title m-5">Projekt:SIECI!</h1>
-      <div class="transform"><a href="#notatki" class="btn title-little">ZOBACZ NOTATKI</a></div>
+      <a href="index.html" style=text-decoration:none;><h1 class="title m-5" >Projekt:SIECI!</h1></a>
     </div>
   </div>
 </div>
@@ -122,65 +121,48 @@ hr {
 
     <div class="container-lg"   style=height:100vh;>
       
-        <h1 class="m-2 title" id="notatki">Notatki!</h1>
-          <div class="d-grid gap-3 row-gap-3">
-    
- <div class="row g-3 justify-content-center">
+        <h1 class="m-2 text-center title-little">Maskarada!</h1>
+        <hr>
+        <div>
+        <h5 class="title-little">Czym są maski podsieci</h5>
+<p>Maska podsieci (subnet mask) to liczba używana w sieciach komputerowych do określenia, która część adresu IP identyfikuje sieć, a która konkretne urządzenie (hosta) w tej sieci.</p>
+<p>Przykład adresu IP:<br>
+    192.168.1.10
+</p>
+<p>Przykład maski: <br>
+    255.255.255.0</p>
 
+    <h5 class="title-little">Do czego służy maska podsieci</h5>
+    <p>Maska pozwala komputerom określić:</p>
+<ul>
+<li>czy dwa urządzenia znajdują się w tej samej sieci,</li>
+<li>jaki jest adres sieci,</li>
+<li>ile urządzeń może znajdować się w danej sieci,</li>
+<li>do którego routera należy wysłać pakiet, jeśli odbiorca znajduje się poza siecią lokalną.</li>
+</ul>
 
+    <h5 class="title-little">Jak działa maska podsieci</h5>
+    <p>Adres IP i maska składają się z 32 bitów.<br>
+Przykład:</p>
+<p>IP:     192.168.1.10<br>
+Maska:  255.255.255.0</p>
 
-      <div class="col-10 col-md-4">
-      <div class="card p-3">
-                <a href ="internet1.html" class="title-little-little">Co w sieci piszczy i gdzie ukrywa się internet</a>
-        <p class="card-text fst-italic">Halooo! Poszukiwany: Internet! - Podstawy sieci</p>
-      </div>
+<p>Maska w postaci binarnej: <br>255.255.255.0<br>
+
+11111111.11111111.11111111.00000000</p>
+
+<p class="title-little-little">Zasada!
+
+bity ustawione na 1 oznaczają część sieci,
+bity ustawione na 0 oznaczają część hosta.
+
+<p class="title-little-little">W tym przykładzie:</p>
+<p>192.168.1 | 10<br>
+   sieć   | host</p>
+
+   <p class="title-little-little">Adres sieci to:<br>
+192.168.1.0</p>
     </div>
-
-
-    <div class="col-10 col-md-4"">
-      <div class="card p-3">
-                <a href="urzadzenia2.html" class="title-little-little">Switche, routery i inne problemy</a>
-        <p class="card-text fst-italic">Co i gdzie, z czym i jak?!</p>
-      </div>
-    </div>
-
-       
-    <div class="col-10 col-md-4">
-      <div class="card p-3">
-                <a href="dhcp.html" class="title-little-little">Router i DHCP<a>
-        <p class="card-text fst-italic">Co daje, co to jest, jak działa i z czym to się je</p>
-      </div>
-    </div>
-
-
-<!--drugi poziom-->
-<hr>
- <div class="col-10 col-md-4">
-      <div class="card p-3">
-                <a href="poklaczenia4.html" class="title-little-little">Bez kabla czy z kablem - oto jest pytanie!</a>
-        <p class="card-text fst-italic">Połączenia przewodowe i bezprzewodowe. Jak to jest z nimi jest? Ależ ambaras!</p>
-      </div>
-    </div>
-
-
-<div class="col-10 col-md-4">
-      <div class="card p-3">
-                <a href="maski.html" class="title-little-little">Maskarada!</a>
-        <p class="card-text fst-italic">Maski</p>
-      </div>
-    </div>
-
-
-     <div class="col-10 col-md-4">
-      <div class="card p-3">
-                <a href="" class="title-little-little">Puk, puk! Czy to dobry adres? Adresy IP</a>
-        <p class="card-text fst-italic">Adresy lokalne, publiczne IPv4 VS. IPv6, adresy logiczne i fizyczne (MAC)... ile tego?!</p>
-      </div>
-    </div>
-     
-
-       </div>
-      </div>
 </div>
 </body>
 </html>
