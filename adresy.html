@@ -108,12 +108,11 @@ hr {
 <body>
     <div class="container-fluid p-0">
   <div class="text-center d-flex align-items-center justify-content-center"
-       style="height:100vh;
+       style="height:20vh;
        background: linear-gradient(rgba(1, 46, 44, 0.877), rgba(13, 112, 119, 0.548)),
        url('siec.jpg') center/cover;">
     <div>
-      <h1 class="title m-5">Projekt:SIECI!</h1>
-      <div class="transform"><a href="#notatki" class="btn title-little">ZOBACZ NOTATKI</a></div>
+      <a href="index.html" style=text-decoration:none;><h1 class="title m-5" >Projekt:SIECI!</h1></a>
     </div>
   </div>
 </div>
@@ -122,65 +121,73 @@ hr {
 
     <div class="container-lg"   style=height:100vh;>
       
-        <h1 class="m-2 title" id="notatki">Notatki!</h1>
-          <div class="d-grid gap-3 row-gap-3">
-    
- <div class="row g-3 justify-content-center">
+        <h1 class="m-2 text-center title-little">Puk, puk! Czy to dobry adres? Adresy IP</h1>
+        <hr>
+        <div>
+<p class="title-little">Adres logiczny (IP)</p>
+<p>Adres logiczny to adres nadawany urządzeniu w sieci komputerowej. Najczęściej jest to adres IP (Internet Protocol).
+</p>
+<p>Przykłady:</p>
+<ul>
+    <li>192.168.1.10</li>
+    <li>10.0.0.5</li>
+    <li>8.8.8.8</li>
+</ul>
+<p>Cechy adresu logicznego</p>
+<ul>
+    <li>może być zmieniany przez administratora lub serwer DHCP,</li>
+    <li>służy do identyfikacji urządzeń w sieci i kierowania pakietów danych,</li>
+    <li>działa w warstwie sieciowej modelu OSI.</li>
+</ul>
+<p class="title-little">Adres fizyczny (MAC)</p>
+<p>Adres fizyczny, nazywany adresem MAC (Media Access Control), jest przypisany do karty sieciowej urządzenia.</p>
+    <p>Przykład:</p>
+    <ul>
+        <li>00:1A:2B:3C:4D:5E</li>
+    </ul>
+    <p>Cechy adresu fizycznego:</p>
+    <ul>
+    <li>jest unikalnym identyfikatorem interfejsu sieciowego,</li>
+    <li>nadawany jest przez producenta urządzenia,</li>
+    <li>służy do komunikacji w sieci lokalnej,</li>
+    <li>działa w warstwie łącza danych modelu OSI.</li>
+</ul>
+
+<p class="title-little">Adres lokalny (prywatny)</p>
+<p>Adres lokalny (prywatny) to adres IP używany wyłącznie w sieciach wewnętrznych, np. w domu, szkole lub firmie.</p>
+<p>Najpopularniejsze zakresy:</p>
+<ul>
+    <li>10.0.0.0 – 10.255.255.255</li>
+    <li>172.16.0.0 – 172.31.255.255</li>
+    <li>192.168.0.0 – 192.168.255.255</li>
+</ul>
+<p>Przykłady:</p>
+<ul>
+    <li>192.168.1.15</li>
+</ul>
+<p>Cechy:</p>
+<ul>
+    <li>nie jest widoczny bezpośrednio w Internecie,</li>
+<li>pozwala urządzeniom komunikować się w tej samej sieci lokalnej,</li>
+<li>jest przydzielany najczęściej przez router.</li>
+</ul>
+
+<p class="title-little">Adres publiczny</p>
+<p>Adres publiczny to adres IP widoczny w Internecie.</p>
+<p>Przykład:</p>
+<ul>
+    <li>31.11.128.25</li>
+</ul>
+<p>Cechy:</p>
+<ul>
+    <li>jest unikalny w skali całego Internetu,</li>
+<li>przydzielany przez dostawcę Internetu (ISP),</li>
+<li>umożliwia komunikację z innymi urządzeniami i serwerami w Internecie,</li>
+<li>zwykle cała sieć domowa korzysta z jednego publicznego adresu IP poprzez mechanizm NAT.</li>
+</ul>
 
 
-
-      <div class="col-10 col-md-4">
-      <div class="card p-3">
-                <a href ="internet1.html" class="title-little-little">Co w sieci piszczy i gdzie ukrywa się internet</a>
-        <p class="card-text fst-italic">Halooo! Poszukiwany: Internet! - Podstawy sieci</p>
-      </div>
-    </div>
-
-
-    <div class="col-10 col-md-4"">
-      <div class="card p-3">
-                <a href="urzadzenia2.html" class="title-little-little">Switche, routery i inne problemy</a>
-        <p class="card-text fst-italic">Co i gdzie, z czym i jak?!</p>
-      </div>
-    </div>
-
-       
-    <div class="col-10 col-md-4">
-      <div class="card p-3">
-                <a href="dhcp.html" class="title-little-little">Router i DHCP<a>
-        <p class="card-text fst-italic">Co daje, co to jest, jak działa i z czym to się je</p>
-      </div>
-    </div>
-
-
-<!--drugi poziom-->
-<hr>
- <div class="col-10 col-md-4">
-      <div class="card p-3">
-                <a href="poklaczenia4.html" class="title-little-little">Bez kabla czy z kablem - oto jest pytanie!</a>
-        <p class="card-text fst-italic">Połączenia przewodowe i bezprzewodowe. Jak to jest z nimi jest? Ależ ambaras!</p>
-      </div>
-    </div>
-
-
-<div class="col-10 col-md-4">
-      <div class="card p-3">
-                <a href="maski.html" class="title-little-little">Maskarada!</a>
-        <p class="card-text fst-italic">Maski</p>
-      </div>
-    </div>
-
-
-     <div class="col-10 col-md-4">
-      <div class="card p-3">
-                <a href="adresy.html" class="title-little-little">Puk, puk! Czy to dobry adres? Adresy IP</a>
-        <p class="card-text fst-italic">Adresy lokalne, publiczne IPv4 VS. IPv6, adresy logiczne i fizyczne (MAC)... ile tego?!</p>
-      </div>
-    </div>
-     
-
-       </div>
-      </div>
+</div>
 </div>
 </body>
 </html>
