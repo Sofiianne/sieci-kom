@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pl" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projekt:SIECI! - Sieci komputerowe</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sekuya&family=Syne+Mono&display=swap" rel="stylesheet">
+  
+
+ <style>
+        [data-bs-theme="dark"] {
+          --bs-body-bg: #071e20;
+          --bs-body-color: #ffffff;
+        
+          --bs-primary: #70d1d1;
+          --bs-secondary: #519794;
+        
+          --bs-card-bg: #041014;
+          --bs-border-color: #1f5664;
+        }
+        
+        html {
+    scroll-behavior: smooth;
+}
+
+hr {
+  display: block;
+  border: none;
+  opacity: 1;
+
+  height: 2px;
+  width: 100%;
+
+  background: linear-gradient(
+    to right,
+    transparent,
+     #029196,
+    #00f7ff,
+    #9ce4cb,
+    #00f7ff,
+     #029196,
+    transparent
+  );
+}
+        .title {
+  font-family: "Syne Mono", monospace;
+  font-optical-sizing: auto;
+  font-size: 50px;
+  color:#ffffff;
+  text-decoration: underline;
+}
+
+        
+        .title-little {
+  font-family: "Syne Mono", monospace;
+  font-optical-sizing: auto;
+  font-size: 30px;
+  color:#ffffff;
+}
+
+        .title-little-little {
+  font-family: "Syne Mono", monospace;
+  font-optical-sizing: auto;
+  font-size: 25px;
+  color:#ffffff;
+  text-decoration: none;
+}
+.transform {
+    display: inline-block;
+    background: #19aaaa;
+    color: white;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+.transform:hover {
+    transform: rotate(6deg) scale(1.1);
+    box-shadow: #071e20;
+    animation: tecza 1s infinite;
+  }
+
+
+/* Definicja animacji (przechodzenie przez różne kolory) */
+@keyframes tecza {
+    0% { background-color: #6efcfc; }   /* Czerwony */
+    20% { background-color: #1de9e9; }  /* Pomarańczowy */
+
+}
+.card {
+     transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+  .card:hover {
+  transform: translateY(-10px);
+  background: #0e3033;
+  }
+
+
+  
+
+          </style>
+</head>
+<body>
+    <div class="container-fluid p-0">
+  <div class="text-center d-flex align-items-center justify-content-center"
+       style="height:20vh;
+       background: linear-gradient(rgba(1, 46, 44, 0.877), rgba(13, 112, 119, 0.548)),
+       url('siec.jpg') center/cover;">
+    <div>
+      <a href="index.html" style=text-decoration:none;><h1 class="title m-5" >Projekt:SIECI!</h1></a>
+    </div>
+  </div>
+</div>
+
+
+
+    <div class="container-lg"   style=height:100vh;>
+      
+        <h1 class="m-2 text-center title-little">Podejrzana sprawa HTTP...i S?</h1>
+        <div>
+<p class="title-little">HTTP - co to?</p>
+<p>HTTP, czyli Hypertext Transfer Protocol, to podstawowy protokół wymiany informacji między przeglądarką użytkownika a serwerem, na którym znajduje się strona internetowa.</p>
+
+<p>Protokół działa w modelu request–response (żądanie-odpowiedź). Klient – czyli przeglądarka – wysyła zapytanie o konkretną stronę, a serwer odpowiada, przesyłając pliki wskazanej witryny. Cała wymiana przebiega w sposób bezstanowy; każde żądanie jest traktowane przez serwer jako oddzielna, niezależna operacja. Serwer nie „pamięta” wcześniejszych interakcji z danym użytkownikiem… co da się obejść za pomocą plików cookies. </p>
+<p>HTTP to protokół nieszyfrowany, co oznacza, że wszystkie wymieniane informacje przesyłane są w postaci otwartego tekstu, który łatwo jest przzechwycić</p>
+<p class="title-little">A co z HTTP..S?</p>
+<p>HTTPS, czyli Hypertext Transfer Protocol Secure, to rozwinięcie klasycznego protokołu HTTP o warstwę zabezpieczeń. Spełnia to samo zadanie, ale dokłada do tego szyfrowanie transmisji danych przez protokół SSL/TLS.</p>
+<p>Warstwa ta działa w uproszczeniu tak: Najpierw uwierzytelnia serwer - czyli upewnia się, że łączy się z właściwą stroną internetową, a następnie zabezpiecza dane (loginy, hasła, numery kart itp.) i generuje kluz szyfrujący, do którego dostęp mają tylko strony wymiany (serwer i przeglądarka)
+
+
+    <p class="title-little">Porównanie połączeń</p>
+
+<table class="table table-hover" >
+  <thead>
+    <tr>
+<th>Cecha</th>
+<th>HTTP</th>
+<th>HTTPS</th>
+    </tr>
+  </thead>
+  <tbody>
+<tr>
+  <td>Szyfrowanie</td>
+  <td>Brak. Dane przesyłane są „otwartym tekstem”; dokładnie tak, jak mają być odczytane.</td>
+  <td>Dane są zabezpieczane za pomocą protokołu SSL/TLS – dostęp do klucza szyfrującego mają tylko serwer i przeglądarka.</td>
+</tr>
+<tr>
+  <td>Weryfikacja tożsamości</td>
+  <td>Brak. Nie ma gwarancji, że serwer, z którym się łączysz, jest tym, za który się podaje.</td>
+  <td>SSL/TLS uwierzytelnia serwer przed wymianą jakichkolwiek informacji i wygenerowaniem kluczy szyfrujących.</td>
+</tr>
+<tr>
+  <td>Oznaczenie</td>
+  <td>Ostrzeżenie „Niezabezpieczona" lub ikona przekreślonej kłódki.</td>
+  <td>Ikona zamkniętej kłódki lub brak powiadomienia.</td>
+</tr>
+<tr>
+  <td>Wpływ na SEO</td>
+  <td>Negatywny. Traktowany przez Google jako przestarzały i niebezpieczny.</td>
+  <td>Oficjalny, lekki sygnał rankingowy Google – świadczy o bezpieczeństwie strony.</td>
+</tr>
+<tr>
+  <td>Port TCP</td>
+  <td>80</td>
+  <td>443</td>
+</tr>
+  </tbody>
+</table>
+</div>
+</div>
+</body>
+</html>
